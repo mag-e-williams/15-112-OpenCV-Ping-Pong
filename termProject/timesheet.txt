@@ -1,0 +1,20 @@
+
+date    hours   descript
+14-Apr  3   pygame and open cv module research
+16-Apr  5   initial concept design and opencv/pygame installation
+17-Apr  5   initial pygame code and open cv object detection 
+18-Apr  3   Open CV object detection
+23-Apr  3   openCV pygame integration
+24-Apr  5   openCV pygame integration
+25-Apr  4   paddle motion 
+26-Apr  4   Vanishing prespective, ball motion, paddle parameters
+27-Apr  5   
+28-Apr  7   
+29-Apr  4   
+30-Apr  6   
+1-May   8   
+2-May   9   
+3-May   13  
+4-May   4 
+
+total: 88  

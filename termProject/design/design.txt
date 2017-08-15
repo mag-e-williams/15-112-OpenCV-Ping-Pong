@@ -1,0 +1,30 @@
+The design for this game is based off of a traditional Ping Pong game, using Open CV as a means by which to control the game and PyGame as a means by which to display the gameplay. 
+
+The different modes for this game include a gameplay mode, an options mode, which controls the difficulty level and allows the user to toggle the openCV camera view, and a How To Play mode which allows the user to get a sense of the manner in which they can use Open CV detection to play the game. 
+
+For each of these modes I implemented the following sprites:
+	Gameplay Mode:
+		RPaddle: player paddle, paddle that is controlled using openCV
+		RPaddle: Computer player paddle, opponent w/ three levels of AI Difficulty
+		Ball: travels across board and interacts with both paddles and the table
+		Table: just an image essentially
+		Scoreboard/Splash: interactive buttons and changing score
+	How To Mode: 
+		HowToPaddle: displays Open CV input detection to the user 
+
+For both the Paddle and HowTo Paddle I calculated their rotation by using the color detection of Orange and Blue on a paddle help in front of the camera.
+For the RPaddle it’s relative x position is dependent on the positional coordinate of the detected paddle using openCV  
+Additionally, For the active sprites in the gameplay mode i calculated their size based on their relative y-coordinate position to ensure the illusion of vanishing perspective. 
+
+For Gameplay, the speed of the return serve for BPaddle is dependent on the difficulty level setting. For RPaddle this setting is dependent on the rate of change of the area of the detected blue paddle (the speed at which the paddle comes towards the screen to hit the ball). 
+
+UI:
+The user interface design for gameplay is based off of simple virtual ping pong games that I have found online such as the one listed below as well as wii virtual tennis and ping pong games.  
+	https://www.miniclip.com/games/ping-pong/en/
+
+All images and graphics I designed myself so as to better achieve the usability and interface I was going for in my project.
+
+The Splash board at the bottom of the game play mode features a pause button, play button, home button, and options button, for faster and easier navigation. 
+
+Additionally, I figured understanding the gameplay with openCV for a first time user would be a bit confusing, so i made sure to add a how to mode along with he option of viewing the camera control for a better understanding of what the camera is detecting. 
+
